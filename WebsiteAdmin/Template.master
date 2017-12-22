@@ -1,0 +1,49 @@
+﻿<%@ Master Language="VB" CodeFile="Template.master.vb" Inherits="WebsiteAdmin_Template" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin PT. XXX</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Scripts/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body class="home">
+    <form id="form1" runat="server">
+    <div>
+        <div class="container-fluid display-table">
+            <div class="row display-table-row">
+                <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+                    <div class="logo">
+                        <a href="../WebsiteAdmin/index.aspx">
+                            <h1>
+                                PT. XXX</h1>
+                        </a>
+                    </div>
+                    <div class="navi">
+                        <ul>
+                            <li><a href="../WebsiteAdmin/index.aspx"><i class="fa fa-home" aria-hidden="true"></i>
+                                <span class="hidden-xs hidden-sm">Home</span></a></li>
+                            <li><a href="../WebsiteAdmin/formPegawai.aspx"><i class="fa fa-home" aria-hidden="true">
+                            </i><span class="hidden-xs hidden-sm">Daftar Pegawai</span></a></li>
+                            <li><a href="../WebsiteAdmin/dataPegawai.aspx"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">
+                                Lihat Data Pegawai</span></a></li>
+                            <li><a href="../WebsiteAdmin/dataDepartemen.aspx"><i class="fa fa-tasks" aria-hidden="true"></i><span class="hidden-xs hidden-sm">
+                                Lihat Data Departemen</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10 col-sm-11 display-table-cell v-align">
+                    <div class="user-dashboard">
+                        <h1>
+                            Selamat Datang !!</h1>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
